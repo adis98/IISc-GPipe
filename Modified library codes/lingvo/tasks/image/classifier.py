@@ -167,7 +167,7 @@ class ModelV1(BaseClassifier):
         layers.FCLayer.Params().Set(
             name='fc2',
             input_dim=1000,
-            output_dim=p.softmax_input_dim))
+            output_dim=p.softmax.input_dim))
 
     self.CreateChild('softmax', p.softmax)
 
